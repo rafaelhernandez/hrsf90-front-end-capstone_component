@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build react client') {
       steps {
-        sh 'npm run build'
+        sh 'zsh npm run build'
       }
     }
   }
