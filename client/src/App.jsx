@@ -9,7 +9,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="div-app">
-        App goes here test should fail now
+        App goes here
       </div>
     );
   }
