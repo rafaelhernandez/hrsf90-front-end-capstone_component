@@ -8,6 +8,7 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "seed-database": "node db/seed.js",
     "start": "nodemon server/server.js",
     "start:debug": "node --inspect server/server.js",
     "start:server-test": "PORT=3001 node server/server.js &",
