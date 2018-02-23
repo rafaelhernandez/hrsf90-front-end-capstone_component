@@ -2,7 +2,7 @@ const request = require('supertest');
 const app = require('../../../server/app');
 
 jest.mock('../../../db/model.js');
-jest.setTimeout(1000000); // for debugging
+// jest.setTimeout(1000000); // for debugging
 
 describe('Test the root path', () => {
 

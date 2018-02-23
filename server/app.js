@@ -16,9 +16,6 @@ app.use(express.static(path.resolve('public')));
 app.get('/', (req, res, next) => res.sendFile('public/index.html'));
 
 app.get('*', (req, res, next) => res.sendStatus(404));
-app.use((err, req, res, next) => {
-  debugger;
-  res.sendStatus(500);
-});
+app.use((err, req, res, next) => res.sendStatus(500));
 
 module.exports = app;
