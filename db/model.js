@@ -18,7 +18,7 @@ const DescriptionSchema = mongoose.Schema(
   {
     "city": String,
     "country": String,
-    "id": Number,
+    "id": {type: Number, unique: true},
     "name": String,
     "scrim_color": Array,
     "user": {
@@ -100,9 +100,16 @@ const DescriptionSchema = mongoose.Schema(
 
 const DescriptionModel = mongoose.model('Description', DescriptionSchema);
 
+function findOne(roomId) {
+  return DescriptionModel.find({id: roomId})
+    .lean()
+    .exec();
+}
+
 // insertOne inserts a story into the db
 function insertOne(description) {
   return DescriptionModel.create(description);
 }
 
 exports.insertOne = insertOne;
+exports.findOne = findOne;

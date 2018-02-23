@@ -1,4 +1,4 @@
-{
+module.exports = {
   "listing": {
     "city": "Malibu",
     "collection_ids": null,
@@ -460,4 +460,4 @@
     "wireless_info": null
   },
   "metadata": {}
-}
+};
