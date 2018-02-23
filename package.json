@@ -12,6 +12,7 @@
     "start": "nodemon server/server.js",
     "start:debug": "node --inspect server/server.js",
     "start:server-test": "PORT=3001 node server/server.js &",
+    "test": "jest unit",
     "test:integration-manually": "PORT=3001 node server/server.js & jest integration ; kill -9 $(lsof -i TCP:3001 | grep LISTEN | awk '{print $2}')",
     "test:integration": "PORT=3001 node server/server.js & jest integration",
     "test:unit": "PORT=3001 node server/server.js & jest unit",
