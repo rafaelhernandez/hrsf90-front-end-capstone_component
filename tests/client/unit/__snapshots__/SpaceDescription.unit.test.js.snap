@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpaceDescription should render correctly 1`] = `
+<div
+  className="div-description-space-description"
+>
+  <div
+    className="div-description-open-fold"
+  >
+    <a
+      href="#"
+    >
+      Read more about the space 
+      <Glyphicon
+        bsClass="glyphicon"
+        glyph="chevron-down"
+      />
+    </a>
+  </div>
+  <div>
+    Mock Long Space Description
+  </div>
+  <div
+    className="div-description-hide-fold"
+  >
+    <a
+      href="#"
+    >
+      Hide 
+      <Glyphicon
+        bsClass="glyphicon"
+        glyph="chevron-up"
+      />
+    </a>
+  </div>
+</div>
+`;

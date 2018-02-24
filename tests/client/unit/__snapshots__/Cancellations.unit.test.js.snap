@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cancellations should render correctly 1`] = `
+<div
+  className="div-description-cancellations"
+>
+  <div
+    className="div-description-cancellations-type"
+  >
+    Flexible
+  </div>
+  Cancel up to 24 hours before check in and get a full refund (minus service fees). Cancel within 24 hours of your trip and the first night is non-refundable. Service fees are refunded when cancellation happens before check in and within 48 hours of booking.
+</div>
+`;
