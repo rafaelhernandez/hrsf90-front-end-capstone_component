@@ -29,7 +29,7 @@ describe('search function', () => {
   test('initial text is correct', async () => {
     var div = '.div-description-app';
     const content = await page.$eval(div, e => e.textContent);
-    expect(content).toMatch(/ENTIRE HOUSE/);
+    expect(content).toMatch(/ENTIRE HOUSE/); 
   });
 
   // test('can search for cats', async () => {
