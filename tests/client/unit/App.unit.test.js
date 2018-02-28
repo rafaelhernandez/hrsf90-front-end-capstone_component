@@ -11,8 +11,6 @@ import descriptionSample from '../../../db/data/description_sample.js';
 configure({ adapter: new Adapter() });
 
 describe('App', () => {
-  // const flushPromises = () => new Promise(resolve => setImmediate(resolve));
-
   var mock = new MockAdapter(axios);
   const data = descriptionSample;
   mock.onGet('/rooms/2736358/description').reply(200, data);

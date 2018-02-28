@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 import Description from './Description.jsx';
 import descriptionSample from '../../db/data/description_sample.js';
+import '../css/style.scss';
 
 class App extends React.Component {
   constructor(props) {

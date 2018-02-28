@@ -1,6 +1,10 @@
-var path = require('path');
-var SRC_DIR = path.join(__dirname, '/client/src');
-var DIST_DIR = path.join(__dirname, '/public');
+const path = require('path');
+const SRC_DIR = path.join(__dirname, '/client/src');
+const SRC_SCSS_DIR = path.join(__dirname, '/client/src/css');
+const DIST_DIR = path.join(__dirname, '/public');
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: `${SRC_DIR}/index.jsx`,
@@ -8,8 +12,14 @@ module.exports = {
     filename: 'bundle.js',
     path: DIST_DIR
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(DIST_DIR, 'index.html'),
+    }),
+    new ExtractTextPlugin('style.bundle.css'), // CSS will be extracted to this bundle file
+  ],
   module : {
-    loaders : [
+    rules : [
       {
         test : /\.jsx?/,
         include : SRC_DIR,
@@ -17,6 +27,24 @@ module.exports = {
         query: {
           presets: ['react', 'env']
         }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {loader: 'css-loader', options: {importLoaders: 1}},
+          'postcss-loader',
+        ],
+      },
+      {
+        test: /\.scss$/,
+        include : SRC_SCSS_DIR,
+        loaders: [
+          'style-loader',
+          {loader: 'css-loader', options: {importLoaders: 1}},
+          'postcss-loader',
+          'sass-loader',
+        ]
       }
     ]
   }
