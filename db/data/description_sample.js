@@ -92,6 +92,7 @@ module.exports = {
   "public_address": "San Francisco, CA, United States",
   "require_guest_phone_verification": false,
   "requires_license": false,
+  "license": "STR-0000380",
   "security_deposit_formatted": "$250",
   "security_deposit_native": 250,
   "security_price_native": 250,

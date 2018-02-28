@@ -86,6 +86,7 @@ const DescriptionSchema = mongoose.Schema(
     "public_address": String,
     "require_guest_phone_verification": Boolean,
     "requires_license": Boolean,
+    "license": String,
     "security_deposit_formatted": String,
     "security_deposit_native": Number,
     "security_price_native": Number,
