@@ -3,7 +3,7 @@ import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { shallow } from 'enzyme';
 import { shallowToJson } from 'enzyme-to-json';
-import AmenityItem from '../../../client/src/AmenityItem.jsx';
+import AmenityItem from '../../../client/src/js/AmenityItem.jsx';
 
 configure({ adapter: new Adapter() });
 

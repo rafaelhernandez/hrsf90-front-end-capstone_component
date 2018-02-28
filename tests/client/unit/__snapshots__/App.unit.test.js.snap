@@ -129,6 +129,7 @@ I have  registered with the city of San Francisco and my license is #STR- (Phone
             "SAN FRANCISCO",
           ],
           "language": "en",
+          "license": "STR-0000380",
           "listing_cleaning_fee_native": 75,
           "listing_monthly_price_native": 3750,
           "listing_price_for_extra_person_native": 50,

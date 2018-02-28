@@ -4,10 +4,13 @@ exports[`ContactHost should render correctly 1`] = `
 <div
   className="div-description-contact-host"
 >
-  <a
-    href="#"
-  >
-    Contact Host
-  </a>
+  <p>
+    <a
+      className="a-description-fold"
+      href="#"
+    >
+      Contact Host
+    </a>
+  </p>
 </div>
 `;

@@ -5,57 +5,76 @@ exports[`HouseRules should render correctly 1`] = `
   className="div-description-house-rules"
 >
   <div
-    className="div-description-checkin-time"
+    className="div-description-section-header"
   >
-    Check-in is anytime after 
-    Anytime after 2PM
+    House Rules
   </div>
   <div
-    className="div-description-checkout-time"
+    className="div-description-house-rules-details"
   >
-    Check out by 
-    12PM (noon)
-  </div>
-  <div
-    className="div-description-read-rules-fold"
-  >
-    <a
-      href="#"
+    <div
+      className="div-description-checkin-time"
     >
-      Read all rules 
-      <Glyphicon
-        bsClass="glyphicon"
-        glyph="chevron-down"
-      />
-    </a>
-  </div>
-  <div
-    className="div-description-additional-house-rules"
-  >
-    I'm OK with pets and the unit opens up to the backyard which makes it easy but my dog is out there so your pet must get along!
-  </div>
-  <div
-    className="div-description-house-rules-acknowledge"
-  >
-    You must also acknowledge
-  </div>
-  <div
-    className="div-description-deposit"
-  >
-    Security Deposit - if you damage the home, you may be charged up to $250
-  </div>
-  <div
-    className="div-description-hide-rules-fold"
-  >
-    <a
-      href="#"
+      Check-in is 
+      Anytime after 2PM
+    </div>
+    <div
+      className="div-description-checkout-time"
     >
-      Hide rules 
-      <Glyphicon
-        bsClass="glyphicon"
-        glyph="chevron-up"
-      />
-    </a>
+      Check out by 
+      12PM (noon)
+    </div>
+    <div
+      className="div-description-read-rules-fold"
+    >
+      <p
+        className="div-description-separator-margin"
+      >
+        <a
+          className="a-description-fold"
+          href="#"
+        >
+          Read all rules 
+          <Glyphicon
+            bsClass="glyphicon"
+            glyph="chevron-down"
+          />
+        </a>
+      </p>
+    </div>
+    <div
+      className="div-description-additional-house-rules"
+    >
+      I'm OK with pets and the unit opens up to the backyard which makes it easy but my dog is out there so your pet must get along!
+    </div>
+    <div
+      className="div-description-house-rules-acknowledge"
+    >
+      You must also acknowledge
+    </div>
+    <div
+      className="div-description-deposit"
+    >
+      Security Deposit - if you damage the home, you may be charged up to $250
+    </div>
+    <div
+      className="div-description-hide-rules-fold"
+    >
+      <p
+        className="div-description-separator-margin"
+      >
+        <a
+          className="a-description-fold"
+          href="#"
+        >
+          Hide rules 
+          <Glyphicon
+            bsClass="glyphicon"
+            glyph="chevron-up"
+          />
+        </a>
+      </p>
+    </div>
   </div>
 </div>
 `;
