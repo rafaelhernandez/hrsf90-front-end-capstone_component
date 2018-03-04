@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HouseRules should render correctly 1`] = `
+<div
+  className="div-description-house-rules"
+>
+  <div
+    className="div-description-section-header"
+  >
+    House Rules
+  </div>
+  <div
+    className="div-description-house-rules-details"
+  >
+    <div
+      className="div-description-checkin-time"
+    >
+      <p>
+        Check-in is 
+        Anytime after 2PM
+      </p>
+    </div>
+    <div
+      className="div-description-checkout-time"
+    >
+      <p>
+        Check out by 
+        12PM (noon)
+      </p>
+    </div>
+    <RulesHidden
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;

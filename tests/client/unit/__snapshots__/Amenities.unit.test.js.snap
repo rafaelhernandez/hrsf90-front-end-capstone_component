@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Amenities should render correctly 1`] = `
+<div
+  className="div-description-amenities"
+>
+  <div
+    className="div-description-section-header"
+  >
+    Amenities
+  </div>
+  <div
+    className="div-description-amenities-items"
+  >
+    <div
+      className="div-description-amenities-left"
+    />
+    <div
+      className="div-description-amenities-right"
+    />
+  </div>
+  <div>
+    <a
+      className="a-description-fold"
+      onClick={[Function]}
+    >
+      Show all 
+      26
+       amenities
+    </a>
+    <Modal
+      ariaHideApp={true}
+      bodyOpenClassName="ReactModal__Body--open"
+      className="modal-description-amenities-container"
+      closeTimeoutMS={0}
+      contentLabel="Amenities"
+      isOpen={false}
+      onRequestClose={[Function]}
+      parentSelector={[Function]}
+      portalClassName="ReactModalPortal"
+      shouldCloseOnEsc={true}
+      shouldCloseOnOverlayClick={true}
+      shouldFocusAfterRender={true}
+      shouldReturnFocusAfterClose={true}
+    >
+      <div
+        className="modal-description-amenities-top"
+      >
+        <div
+          className="div-description-scroll-wrapper"
+        >
+          <button
+            className="button-description-modal-close"
+            onClick={[Function]}
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<svg viewBox=\\"0 0 24 24\\" role=\\"img\\" aria-label=\\"Close\\" focusable=\\"false\\" style=\\"height: 16px; width: 16px; display: block; fill: rgb(118, 118, 118);\\"><path d=\\"m23.25 24c-.19 0-.38-.07-.53-.22l-10.72-10.72-10.72 10.72c-.29.29-.77.29-1.06 0s-.29-.77 0-1.06l10.72-10.72-10.72-10.72c-.29-.29-.29-.77 0-1.06s.77-.29 1.06 0l10.72 10.72 10.72-10.72c.29-.29.77-.29 1.06 0s .29.77 0 1.06l-10.72 10.72 10.72 10.72c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22\\" fill-rule=\\"evenodd\\"></path></svg>",
+                }
+              }
+            />
+          </button>
+          <ModalAmenities
+            amenities={
+              Array [
+                "TV",
+                "Cable TV",
+                "Wifi",
+                "Pets live on this property",
+                "Indoor fireplace",
+                "Heating",
+                "Family/kid friendly",
+                "Washer",
+                "Dryer",
+                "Smoke detector",
+                "Carbon monoxide detector",
+                "Essentials",
+                "Hangers",
+                "Hair dryer",
+                "Iron",
+                "Laptop friendly workspace",
+                "Private living room",
+                "Private entrance",
+                "Bathtub",
+                "Hot water",
+                "Coffee maker",
+                "Refrigerator",
+                "Dishes and silverware",
+                "Oven",
+                "Garden or backyard",
+                "Hot water kettle",
+              ]
+            }
+          />
+        </div>
+      </div>
+    </Modal>
+  </div>
+</div>
+`;

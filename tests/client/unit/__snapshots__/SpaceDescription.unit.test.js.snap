@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpaceDescription should render correctly 1`] = `
+<div
+  className="div-description-space-description"
+>
+  <HiddenSpace
+    desc="Mock Long Space Description"
+    onClick={[Function]}
+  />
+</div>
+`;

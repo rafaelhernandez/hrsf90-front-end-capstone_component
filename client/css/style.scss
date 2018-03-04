@@ -1,0 +1,331 @@
+$font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+$color: #484848;
+
+%div-description-common-font {
+  color: $color;
+  font-family: $font-family;
+}
+
+%div-description-common-light-font {
+  @extend %div-description-common-font;
+  font-weight: 300;
+}
+
+%div-description-common-normal-font {
+  @extend %div-description-common-font;
+  font-weight: normal;
+}
+
+%div-description-common-bold-font {
+  @extend %div-description-common-font;
+  font-weight: 700;
+}
+
+%div-description-light-font {
+  @extend %div-description-common-light-font;
+  word-wrap: break-word;
+}
+
+%div-description-normal-font {
+  @extend %div-description-common-normal-font;
+  word-wrap: break-word;
+}
+
+%div-description-bold-font {
+  @extend %div-description-common-bold-font;
+  word-wrap: break-word;
+}
+
+%div-description-common-font-size {
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+}
+
+%div-description-common {
+  @extend %div-description-common-light-font;
+  @extend %div-description-common-font-size;
+}
+
+%div-description-common-word-wrap {
+  @extend %div-description-common;
+  word-wrap: break-word;
+}
+
+%div-description-separator-separator-line {
+  border-bottom: 1px solid #DBDBDB;
+}
+
+@mixin padding-horizontal($len) {
+  padding-left: $len;
+  padding-right: $len;
+}
+
+@mixin padding-vertical($len) {
+  padding-top: $len;
+  padding-bottom: $len;
+}
+
+@mixin margin-vertical($len) {
+  margin-top: $len;
+  margin-bottom: $len;
+}
+
+
+body {
+  font-family: $font-family;
+  color: rgb(3, 21, 13);
+}
+
+.div-description-description {
+  @extend %div-description-common;
+}
+
+.div-description-body {
+  @include padding-horizontal(8px);
+  min-height: 1px;
+  position: relative;
+}
+
+.div-description-property-type {
+  @extend %div-description-bold-font;
+  display: inline;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  margin: 0px;
+  @include padding-vertical(0px);
+}
+
+.div-description-name {
+  @extend %div-description-bold-font;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  margin: 0px;
+}
+
+.div-description-city {
+  @extend %div-description-common-word-wrap;
+  margin: 0px 0px 16px 0px;
+}
+
+.div-description-characteristics-block {
+  display: inline-block;
+}
+
+.div-description-characteristics-item {
+  display: table;
+  margin-right: 36px;
+}
+
+.div-description-characteristics-table-cell-margin {
+  margin-right: 8px;
+}
+
+.div-description-characteristics-table-cell {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.div-description-characteristics-amenity-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.div-description-summary {
+  min-height: 1px;
+  margin: 16px 0px 16px 0px;
+  position: relative;
+}
+
+.div-description-guests,
+.div-description-bedrooms,
+.div-description-beds,
+.div-description-bathrooms {
+  @extend %div-description-common-word-wrap;
+  margin: 8px;
+  display: inline;
+}
+
+.div-description-hide-fold {
+  padding: 16px 0px 0px, 0px;
+  display: block;
+}
+
+.a-description-fold {
+    color: #008489;
+    font-family: $font-family;
+    font: inherit;
+    text-decoration: none;
+    border: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.div-description-separator-margin {
+  @include margin-vertical(24px);
+  display: block;
+}
+
+.div-description-separator-separator {
+  @extend %div-description-separator-separator-line;
+}
+
+.div-description-separator-short-separator {
+  width: 80px;
+  @extend %div-description-separator-separator-line;
+}
+
+.div-description-house-rules-acknowledge,
+.div-description-space-header {
+  font-weight: 500;
+  margin: 16px 0px 16px 0px;
+}
+
+.div-description-amenities-right,
+.div-description-amenities-left {
+    @include padding-horizontal(8px);
+    min-height: 1px;
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+.div-description-section-header {
+  @extend %div-description-bold-font;
+  @extend %div-description-common-font-size;
+  margin: 16px 0px 16px 0px;
+  display: block;
+}
+
+.modal-description-amenities-container {
+  position: fixed;
+  text-decoration: none;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  width: 568px;
+  max-width: 100%;
+  padding: 40px;
+  border: 1px solid #DBDBDB;
+  -webkit-box-shadow: 0px 0px 3px #ccc;
+  -moz-box-shadow: 0px 0px 3px #ccc;
+  box-shadow: 0px 0px 3px #ccc;
+  outline: 0;
+  background-color: #ffffff;
+}
+
+.modal-description-amenities-top {
+  height: 90vh;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-description-amenities-inner {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+}
+
+.button-description-modal-close {
+  border: 3px solid #DBDBDB;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.div-description-modal-amenities-title {
+  @extend %div-description-bold-font;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  margin: 8px 0px 24px 0px;
+  @include padding-vertical(2px);
+}
+
+.div-description-modal-amenities-category {
+  @extend %div-description-normal-font;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  margin-top: 36px;
+  margin-bottom: 24px;
+  @include padding-vertical(0px);
+}
+
+.div-description-modal-amenities-name {
+  @extend %div-description-light-font;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: undefined;
+  margin: 0px;
+  @include padding-vertical(0px);
+}
+
+.div-description-title {
+  min-height: 1px;
+  position: relative;
+}
+
+.div-description-thumbnail-pic {
+  @include padding-horizontal(8px);
+  min-height: 1px;
+  position: relative;
+}
+
+.div-description-user-thumbnail_url {
+  height: 64px;
+  width: 64px;
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.div-description-user-thumbnail-picture {
+  text-align: center;
+}
+
+.div-description-user-first-name {
+  color: #767676;
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 16px;
+  word-wrap: break-word;
+}
+
+@media (min-width: 1128px) {
+  .div-description-body {
+      width: 58.333333333333336%;
+      float: left;
+  }
+  .div-description-summary-block {
+    width: 100%;
+    float: left;
+  }
+}
+
+@media (min-width: 744px) {
+  .div-description-title {
+    width: 83.33333333333334%;
+    float: left;
+  }
+  .div-description-thumbnail-pic {
+    width: 16.666666666666664%;
+    float: left;
+  }
+}
