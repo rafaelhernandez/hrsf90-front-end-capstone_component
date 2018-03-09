@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import axios from 'axios';
 import Description from './Description.jsx';
 import descriptionSample from '../../../db/data/description_sample.js';
@@ -15,12 +14,11 @@ class AppDescription extends React.Component {
   }
 
   componentDidMount() {
-    this.props.roomId;
     this.getDescriptionForRoom(this.props.roomId);
   }
 
   getDescriptionForRoom(roomId) {
-    axios.get(`http://localhost:3002/api/rooms/${roomId}/description`, { crossdomain: true })
+    axios.get(`/api/rooms/${roomId}/description`, { crossdomain: true })
       .then((desc) => {
         this.setState({
           description: desc.data
@@ -42,4 +40,4 @@ class AppDescription extends React.Component {
 }
 
 window.AppDescription = AppDescription;
-export default AppDescription = AppDescription;
+export default AppDescription;
